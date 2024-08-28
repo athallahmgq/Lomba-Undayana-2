@@ -11,23 +11,36 @@
     <link rel="stylesheet" href="Style/testimoni.css">
     <link rel="stylesheet" href="Style/last.css">
     <link rel="stylesheet" href="Style/loginpopup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <nav class="navbar">
+        <div class="navbar">
             <div class="logo"><a href="#">Health<span>B</span>ridge</a></div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="btn-nav" href="#">Sign Up</button>
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+        </div>
 
-            <div class="nav-link">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Service</a>
-                <a href="#">Contact</a>
-            </div>
+        <div class="dropdown-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><button class="btn-nav" href="#">Sign Up</button></li>  
+        </div>
 
                 <button class="btn-login-popup">Login</button>
-        </nav>
+        </div>
     </header>
 
 
@@ -93,7 +106,7 @@
 
     <!-- Hero -->
 
-        <section class="container">
+        <div class="container">
             <div class="text">
                 <h4>SERTIFICATED DOCTOR</h4>
                 <h1 class="title">Search & Find Clinic <br>For Your <span class="home-span">Surgery</span></h1>
@@ -108,15 +121,12 @@
                 <img src="Style/img/img.png" alt="Health Problem">
             </div>
 
-            <div class="bagian-bwh">
+            <!-- <div class="bagian-bwh">
                 <h4 class="h4-bwh">Scroll for Explore ⬇</h4>
-            </div>
-
-           
-            <div class="gambar-line"></div>
+            </div> -->
           
 
-            </section>
+            </div>
             
 
     <!-- Hero End -->
@@ -361,6 +371,21 @@
             &copy; 2024 HealthBridge.com Hak Cipta Dilindungi.
           </p>
     </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtn.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
     <!-- Footer End -->
 </body>
 </html>

@@ -13,9 +13,19 @@ body {
   background-color: #ffffff;
 }
 
+li{
+  list-style: none;
+}
+
+a{
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
 /* NAVIGASI BAR */
 
-header {
+/* header {
   z-index: 10;
   position: sticky;
   justify-content: space-between;
@@ -27,6 +37,22 @@ header {
   height: 10%;
   width: 100%;
   animation: fadeIn 3s ease-in-out;
+} */
+
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  font-size: 1em;
+  display: flex;
+}
+
+.navbar ul li a {
+  font-size: inherit;
+  text-decoration: none;
 }
 
 .logo,
@@ -36,19 +62,13 @@ span {
 }
 
 .navbar {
-  padding: 1rem;
-  display: flex;
   width: 100%;
-  height: 100%;
-  justify-content: space-around;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
   align-items: center;
-}
-
-.navbar a {
-  color: #000000;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 10px;
+  justify-content: space-between;
 }
 
 .logo {
@@ -69,14 +89,48 @@ span {
   font-size: 23px;
 }
 
-.nav-link {
+.links {
   display: flex;
-  font-size: 1rem;
-  align-items: center;
-  margin-right: 20px;
+  gap: 2rem;
 }
 
-.nav-link a {
+.navbar .toggle-btn {
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.btn-nav {
+  padding: 10px 30px;
+  background-color: #1262ed;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+.btn-nav:hover {
+  transform: translateY(-10px);
+  transform: translateX(-2px);
+  background-color: #0c0c0c;
+  box-shadow: 4px 8px 20px 0px #0304106b;
+  color: white;
+}
+
+.btn-nav a{
+  color: inherit;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.links a {
   position: relative;
   color: inherit;
   font-size: inherit;
@@ -84,42 +138,69 @@ span {
   transition: 1s ease-in-out;
 }
 
-.nav-link a:hover {
+.links a:hover {
   color: #1e90ff;
   font-size: 1.1rem;
 }
 
 /* Efek garis bawah saat hover */
 
-.nav-link a {
+.links a {
   position: relative;
   transition: font-size 1s;
 }
 
-.nav-link a::after {
+.links a::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 6px;
+  bottom: -3px;
   width: 0;
   height: 3px;
   background: #1e90ff;
   transition: width 1s, left 1s;
 }
 
-.nav-link a:hover{
+.links a:hover {
   font-size: 1.1em;
   text-shadow: 0 0 1px #1e90ff, 0 0 1px #1e90ff, 0 0 1px #1e90ff;
   transition: font-size 1s, text-shadow 1s;
 }
 
-.nav-link a:hover::after {
+.links a:hover::after {
   width: 100%;
   left: 0;
 }
 
+.dropdown-menu{
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: height 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
+.dropdown-menu.open{
+  height: 240px;
+}
 
+.dropdown-menu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-menu .btn-nav{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+=======
 .btn-login-popup {
   padding: 10px 30px;
   background-color: #1262ed;
@@ -137,19 +218,47 @@ span {
   box-shadow: 4px 8px 20px 0px #0304106b;
   color: white;
 }
+
+/* reponsive design */
+@media (max-width: 992px){
+  .navbar .links,
+  .navbar .btn-nav{
+     display: none;
+  }
+
+  .navbar .toggle-btn{
+     display: block;
+  }
+
+  .dropdown-menu{
+    display: block;
+ }
+}
+
+@media (max-width: 576px){
+  .dropdown-menu{
+    left: 2rem;
+    width: unset;
+ }
+}
+
+/* navbar end */
+
+
 /* navagasi end */
 
-section.container {
-  margin: 5%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  width: 100vw;
+.container {
+  width: 100%;
   height: 50vh;
+  margin-bottom: 20%;
+  display: flex;
 }
 
 .text {
+  width: 100%;
   animation: slideRight 2s ease-in-out;
-  margin-left: 14%;
+  margin-left: 10%;
+  margin-top: 10%;
 }
 
 h4 {
@@ -162,8 +271,8 @@ h4 {
   margin-bottom: 30px;
 }
 
-.home-span{
-  background: linear-gradient(to left, #33A3E5, #0E2F96);
+.home-span {
+  background: linear-gradient(to left, #33a3e5, #0e2f96);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -220,16 +329,17 @@ h4 {
 .image {
   z-index: -10;
   position: relative;
-  margin-top: 8%;
+  margin-top: 10%;
+  margin-left: 10%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
   height: 100%;
   justify-content: flex-end;
   animation: slideLeft 2s ease-in-out;
 }
 
-.bagian-bwh{
+/* .bagian-bwh{
   animation: slideRight 2s ease-in;
   width: 100vw;
   height: 100vh;
@@ -249,11 +359,7 @@ h4 {
   margin-top: 20%;
   margin-left: -15.5%;
   border-radius: 50px 50px 50px 50px;
-}
-
-
-
-
+} */
 
 @media screen and (max-width: 768px) {
   .container {
@@ -262,7 +368,7 @@ h4 {
 }
 .image img {
   display: flex;
-  margin-right: 30%;
+  margin-right: 20%;
   margin-top: -15%;
   flex-direction: row;
   position: relative;
@@ -290,8 +396,6 @@ h4 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
-
 
 /* section fedback */
 
@@ -351,25 +455,25 @@ section.feedback {
   box-sizing: border-box;
 }
 
-.title-promo{
+.title-promo {
   font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.title-promo h1{
+.title-promo h1 {
   font-size: inherit;
   animation: slideUp 1s linear;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
 }
 
-.promo-area{
+.promo-area {
   margin: 5rem;
   padding: 2rem;
   display: flex;
   /* align-items: center; Center items vertically */
-  box-sizing: border-box; 
+  box-sizing: border-box;
   border-radius: 50px;
   border: lightslategray 3px solid;
   transition: 1s;
@@ -378,11 +482,11 @@ section.feedback {
   animation-range: entry 0% cover 40%;
 }
 
-.img-promo{
+.img-promo {
   margin: 0;
 }
 
-.img-promo img{
+.img-promo img {
   margin-left: 40px;
   margin-top: 60px;
   margin-bottom: -90px;
@@ -390,17 +494,17 @@ section.feedback {
   height: auto; /* Maintain aspect ratio */
 }
 
-.content-promo{
+.content-promo {
   margin: 3rem;
   padding: 3rem;
   margin-right: 60px;
 }
 
-.title-promo{
+.title-promo {
   font-size: 50px;
 }
 
-.deskripsi{
+.deskripsi {
   margin-bottom: 20px;
 }
 
@@ -412,17 +516,17 @@ section.feedback {
 
 /* popup */
 
-.popup{
+.popup {
   width: 100%;
   height: 100vh;
-  background-color: rgba(0,0,0, .8);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .popup-content {
@@ -436,10 +540,11 @@ section.feedback {
   position: absolute;
   top: 15%;
   left: 33%;
-  transform: translate(-50% -50%) scale(.25);
+  transform: translate(-50% -50%) scale(0.25);
   opacity: 0;
-  transition: all .5s .1s;
-  
+
+  transition: all 0.5s 0.1s;
+ 
 }
 
 .popup-img {
@@ -452,7 +557,7 @@ section.feedback {
 
 .popup-img img {
   width: calc(50% - 5px);
-  height: 150px; 
+  height: 150px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -512,17 +617,16 @@ section.feedback {
   color: #333;
 }
 
-
 .close-btn:hover {
   color: #333;
 }
 
-#popup:target{
-   opacity: 1;
-   visibility: visible;
+#popup:target {
+  opacity: 1;
+  visibility: visible;
 }
 
-#popup:target .popup-content{
+#popup:target .popup-content {
   opacity: 1;
   transform: translate(-50% -50%) scale(1);
 }
@@ -568,7 +672,7 @@ section.feedback {
   transition: width 1s, left 1s;
 }
 
-.footer-links a:hover{
+.footer-links a:hover {
   font-size: 1.1em;
   text-shadow: 0 0 1px #001428, 0 0 1px #001428, 0 0 1px #001428;
   transition: font-size 1s, text-shadow 1s;
@@ -578,7 +682,6 @@ section.feedback {
   width: 100%;
   left: 0;
 }
-
 
 /* end */
 
@@ -713,10 +816,10 @@ section.feedback {
 /* keyframe khusus end */
 
 @keyframes rotate {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
