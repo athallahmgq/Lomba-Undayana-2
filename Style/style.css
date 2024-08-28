@@ -120,7 +120,7 @@ span {
 
 
 
-.signup-popup {
+.btn-login-popup {
   padding: 10px 30px;
   background-color: #1262ed;
   color: #ffffff;
@@ -130,7 +130,7 @@ span {
   transition: 1s ease-in-out;
 }
 
-.signup-popup:hover {
+.btn-login-popup:hover {
   transform: translateY(-10px);
   transform: translateX(-2px);
   background-color: #0c0c0c;
@@ -438,7 +438,6 @@ section.feedback {
   left: 33%;
   transform: translate(-50% -50%) scale(.25);
   opacity: 0;
-
   transition: all .5s .1s;
   
 }
