@@ -23,6 +23,16 @@ a{
   text-decoration: none;
 }
 
+li{
+  list-style: none;
+}
+
+a{
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
 /* NAVIGASI BAR */
 
 /* header {
@@ -53,6 +63,22 @@ header {
 .navbar ul li a {
   font-size: inherit;
   text-decoration: none;
+} */
+
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  font-size: 1em;
+  display: flex;
+}
+
+.navbar ul li a {
+  font-size: inherit;
+  text-decoration: none;
 }
 
 .logo,
@@ -66,8 +92,13 @@ span {
   height: 60px;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   justify-content: space-between;
 }
 
@@ -131,6 +162,17 @@ span {
 }
 
 .links a {
+.btn-nav a{
+  color: inherit;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.links a {
   position: relative;
   color: inherit;
   font-size: inherit;
@@ -139,6 +181,7 @@ span {
 }
 
 .links a:hover {
+.links a:hover {
   color: #1e90ff;
   font-size: 1.1rem;
 }
@@ -146,14 +189,17 @@ span {
 /* Efek garis bawah saat hover */
 
 .links a {
+.links a {
   position: relative;
   transition: font-size 1s;
 }
 
 .links a::after {
+.links a::after {
   content: "";
   position: absolute;
   left: 50%;
+  bottom: -3px;
   bottom: -3px;
   width: 0;
   height: 3px;
@@ -162,11 +208,13 @@ span {
 }
 
 .links a:hover {
+.links a:hover {
   font-size: 1.1em;
   text-shadow: 0 0 1px #1e90ff, 0 0 1px #1e90ff, 0 0 1px #1e90ff;
   transition: font-size 1s, text-shadow 1s;
 }
 
+.links a:hover::after {
 .links a:hover::after {
   width: 100%;
   left: 0;
@@ -200,6 +248,21 @@ span {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 10px 30px;
+  background-color: #1262ed;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+.btn-login-popup:hover {
+  transform: translateY(-10px);
+  transform: translateX(-2px);
+  background-color: #0c0c0c;
+  box-shadow: 4px 8px 20px 0px #0304106b;
+  color: white;
 }
 
 /* reponsive design */
@@ -232,14 +295,21 @@ span {
 
 .container {
   width: 100%;
+.container {
+  width: 100%;
   height: 50vh;
+  margin-bottom: 20%;
+  display: flex;
   margin-bottom: 20%;
   display: flex;
 }
 
 .text {
   width: 100%;
+  width: 100%;
   animation: slideRight 2s ease-in-out;
+  margin-left: 10%;
+  margin-top: 10%;
   margin-left: 10%;
   margin-top: 10%;
 }
@@ -254,6 +324,8 @@ h4 {
   margin-bottom: 30px;
 }
 
+.home-span {
+  background: linear-gradient(to left, #33a3e5, #0e2f96);
 .home-span {
   background: linear-gradient(to left, #33a3e5, #0e2f96);
   -webkit-background-clip: text;
@@ -314,7 +386,10 @@ h4 {
   position: relative;
   margin-top: 10%;
   margin-left: 10%;
+  margin-top: 10%;
+  margin-left: 10%;
   display: flex;
+  align-items: flex-end;
   align-items: flex-end;
   width: 100%;
   height: 100%;
@@ -322,6 +397,7 @@ h4 {
   animation: slideLeft 2s ease-in-out;
 }
 
+/* .bagian-bwh{
 /* .bagian-bwh{
   animation: slideRight 2s ease-in;
   width: 100vw;
@@ -351,6 +427,7 @@ h4 {
 }
 .image img {
   display: flex;
+  margin-right: 20%;
   margin-right: 20%;
   margin-top: -15%;
   flex-direction: row;
@@ -439,12 +516,13 @@ section.feedback {
 }
 
 .title-promo {
+.title-promo {
   font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.title-promo h1 {
+.title-promo h1{
   font-size: inherit;
   animation: slideUp 1s linear;
   animation-timeline: view();
@@ -527,6 +605,7 @@ section.feedback {
   opacity: 0;
 
   transition: all 0.5s 0.1s;
+ 
 }
 
 .popup-img {
@@ -804,4 +883,4 @@ section.feedback {
   to {
     transform: rotate(360deg);
   }
-}
+} 
