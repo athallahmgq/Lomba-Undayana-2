@@ -1,13 +1,13 @@
 /* section about */
 
 section.about {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 10%;
-    background-image: url(img/bg-about.png);
+    /* background-image: url(img/bg-about.png);
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     /* display: grid;
     grid-template-columns: 50% 50%; */
     width: 100vw;
@@ -17,7 +17,8 @@ section.about {
   .about-area{
     display: flex;
     width: 100%;
-    height: 80%;
+    height: 100%;
+    gap: 15%;
     justify-content: space-evenly;
 
   }
@@ -43,6 +44,18 @@ section.about {
     transition: 0.3s ease-in-out;
   }
 
+  .about-image img {
+    display: flex;
+    /* margin-right: 20%; */
+    /* margin-top: -15%; */
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 100%; /* add this to limit the width to 50% of the parent container */
+    max-height: 50vh; /* add this to limit the height to 50% of the viewport height */
+  }
+
   .about-image:hover{
     animation: scale-up 1s infinite alternate;
   }
@@ -50,9 +63,11 @@ section.about {
   
   
   .about-content {
-    margin-top: 5%;
-    margin-right: 80px;
+    width: 100%;
+    margin-top: 3%;
+    margin-right: 0px;
     display: flex;
+    /* padding-left: 10%; */
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
