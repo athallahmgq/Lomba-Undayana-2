@@ -1,0 +1,85 @@
+/* section fedback */
+
+section.last {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    align-items: center;
+    z-index: -10;
+  }
+  
+  .last-area {
+    /* background-color: #ffffff; */
+    background-image: url(img/bg-last.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 80%;
+    width: 85%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: 5px 5px 10px 0px #a6b6d3;
+    transition: 1s;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  
+  .last-area:hover {
+    box-shadow: 5px 10px 45px #1e90ff;
+    border: #1e90ff solid 4px;
+    transform: translateY(-20px);
+  }
+  
+  .content-last {
+    margin-left: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  
+  .last-area h4 {
+    font-size: 2.8rem;
+    margin-left: 0;
+  }
+
+  span.last-text{
+    font-weight: 1000;
+    color: black;
+  }
+  
+  .last-area h3 {
+    color: #2e5989;
+    font-size: 1.1rem;
+  }
+
+  .last1 {
+    color: black;
+    font-weight: 500;
+  }
+
+  .btn-area3 {
+    display: flex;
+    margin-right: 4rem;
+  }
+  
+  .btn-lt {
+    border: #0c0c0c solid 2px;
+    color: #0c0c0c;
+    padding: 20px 50px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 1s ease-in-out;
+  }
+  
+  .btn-lt:hover {
+    transform: translateY(-10px);
+    transform: translateX(-10px);
+    background-color: #0c0c0c;
+    box-shadow: 4px 8px 20px 0px #0304106b;
+    color: white;
+  }
