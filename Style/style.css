@@ -200,6 +200,23 @@ span {
   width: 100%;
   display: flex;
   justify-content: center;
+=======
+.btn-login-popup {
+  padding: 10px 30px;
+  background-color: #1262ed;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+.btn-login-popup:hover {
+  transform: translateY(-10px);
+  transform: translateX(-2px);
+  background-color: #0c0c0c;
+  box-shadow: 4px 8px 20px 0px #0304106b;
+  color: white;
 }
 
 /* reponsive design */
@@ -527,6 +544,7 @@ section.feedback {
   opacity: 0;
 
   transition: all 0.5s 0.1s;
+ 
 }
 
 .popup-img {
