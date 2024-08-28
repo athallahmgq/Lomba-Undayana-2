@@ -11,71 +11,29 @@
     <link rel="stylesheet" href="Style/testimoni.css">
     <link rel="stylesheet" href="Style/last.css">
     <link rel="stylesheet" href="Style/loginpopup.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <div class="navbar">
+        <nav class="navbar">
             <div class="logo"><a href="#">Health<span>B</span>ridge</a></div>
-            <ul class="links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <button class="btn-nav" href="#">Sign Up</button>
-                <div class="toggle-btn">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-        </div>
 
-        <div class="dropdown-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><button class="btn-nav" href="#">Sign Up</button></li>  
-        </div>
+            <div class="nav-link">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+            </div>
 
+                <button class="signup-popup">Sign Up</button>
+        </nav>
     </header>
-
-    <div class="header2">
-    <div class="wrapper">
-        <div class="form-box-login">
-            <h2>Login</h2> 
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="Email" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">Remember Me</label>
-                    <a href="#">Forgot Password?</a>
-                </div>
-                <button type="submit" class="btn-login"></button>
-                <div class="login-register"><p>Don't have an account?<a href="#" class="register-link">Register</a></p></div>
-            </form>
-        </div>
-    </div>
-</div>
-
-    <script src="loginpopup.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
     <!-- Header End -->
 
     <!-- Hero -->
 
-        <div class="container">
+        <section class="container">
             <div class="text">
                 <h4>SERTIFICATED DOCTOR</h4>
                 <h1 class="title">Search & Find Clinic <br>For Your <span class="home-span">Surgery</span></h1>
@@ -92,10 +50,13 @@
 
             <!-- <div class="bagian-bwh">
                 <h4 class="h4-bwh">Scroll for Explore ⬇</h4>
-            </div> -->
+            </div>
+
+           
+            <div class="gambar-line"></div> -->
           
 
-            </div>
+            </section>
             
 
     <!-- Hero End -->
@@ -340,21 +301,6 @@
             &copy; 2024 HealthBridge.com Hak Cipta Dilindungi.
           </p>
     </footer>
-
-    <script>
-        const toggleBtn = document.querySelector('.toggle-btn')
-        const toggleBtnIcon = document.querySelector('.toggle-btn i')
-        const dropDownMenu = document.querySelector('.dropdown-menu')
-
-        toggleBtn.onclick = function (){
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtn.classList = isOpen
-            ?'fa-solid fa-xmark'
-            :'fa-solid fa-bars'
-        }
-    </script>
     <!-- Footer End -->
 </body>
 </html>

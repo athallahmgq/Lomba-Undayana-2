@@ -13,19 +13,9 @@ body {
   background-color: #ffffff;
 }
 
-li{
-  list-style: none;
-}
-
-a{
-  color: black;
-  font-size: 1rem;
-  text-decoration: none;
-}
-
 /* NAVIGASI BAR */
 
-/* header {
+header {
   z-index: 10;
   position: sticky;
   justify-content: space-between;
@@ -37,22 +27,6 @@ a{
   height: 10%;
   width: 100%;
   animation: fadeIn 3s ease-in-out;
-} */
-
-header {
-  position: relative;
-  padding: 0 2rem;
-}
-
-.navbar ul {
-  list-style: none;
-  font-size: 1em;
-  display: flex;
-}
-
-.navbar ul li a {
-  font-size: inherit;
-  text-decoration: none;
 }
 
 .logo,
@@ -62,13 +36,19 @@ span {
 }
 
 .navbar {
-  width: 100%;
-  height: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 1rem;
   display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
 }
 
 .logo {
@@ -89,48 +69,14 @@ span {
   font-size: 23px;
 }
 
-.links {
+.nav-link {
   display: flex;
-  gap: 2rem;
+  font-size: 1rem;
+  align-items: center;
+  margin-right: 20px;
 }
 
-.navbar .toggle-btn {
-  color: black;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
-}
-
-.btn-nav {
-  padding: 10px 30px;
-  background-color: #1262ed;
-  color: #ffffff;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 1s ease-in-out;
-}
-
-.btn-nav:hover {
-  transform: translateY(-10px);
-  transform: translateX(-2px);
-  background-color: #0c0c0c;
-  box-shadow: 4px 8px 20px 0px #0304106b;
-  color: white;
-}
-
-.btn-nav a{
-  color: inherit;
-}
-
-.navbar a {
-  color: #000000;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.links a {
+.nav-link a {
   position: relative;
   color: inherit;
   font-size: inherit;
@@ -138,96 +84,59 @@ span {
   transition: 1s ease-in-out;
 }
 
-.links a:hover {
+.nav-link a:hover {
   color: #1e90ff;
   font-size: 1.1rem;
 }
 
 /* Efek garis bawah saat hover */
 
-.links a {
+.nav-link a {
   position: relative;
   transition: font-size 1s;
 }
 
-.links a::after {
+.nav-link a::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -3px;
+  bottom: 6px;
   width: 0;
   height: 3px;
   background: #1e90ff;
   transition: width 1s, left 1s;
 }
 
-.links a:hover {
+.nav-link a:hover{
   font-size: 1.1em;
   text-shadow: 0 0 1px #1e90ff, 0 0 1px #1e90ff, 0 0 1px #1e90ff;
   transition: font-size 1s, text-shadow 1s;
 }
 
-.links a:hover::after {
+.nav-link a:hover::after {
   width: 100%;
   left: 0;
 }
 
-.dropdown-menu{
-  position: absolute;
-  right: 2rem;
-  top: 60px;
-  height: 0;
-  width: 300px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
-  border-radius: 15px;
-  overflow: hidden;
-  transition: height 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+
+.signup-popup {
+  padding: 10px 30px;
+  background-color: #1262ed;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
 }
 
-.dropdown-menu.open{
-  height: 240px;
+.signup-popup:hover {
+  transform: translateY(-10px);
+  transform: translateX(-2px);
+  background-color: #0c0c0c;
+  box-shadow: 4px 8px 20px 0px #0304106b;
+  color: white;
 }
-
-.dropdown-menu li{
-  padding: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.dropdown-menu .btn-nav{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-/* reponsive design */
-@media (max-width: 992px){
-  .navbar .links,
-  .navbar .btn-nav{
-     display: none;
-  }
-
-  .navbar .toggle-btn{
-     display: block;
-  }
-
-  .dropdown-menu{
-    display: block;
- }
-}
-
-@media (max-width: 576px){
-  .dropdown-menu{
-    left: 2rem;
-    width: unset;
- }
-}
-
-/* navbar end */
-
-
 /* navagasi end */
 
 .container {
