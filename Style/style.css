@@ -17,16 +17,16 @@ body {
 
 header {
   z-index: 10;
-  position: sticky;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  top: 0;
-  background-color: #ffffff;
-  color: #000000;
-  height: 10%;
-  width: 100%;
-  animation: fadeIn 3s ease-in-out;
+    position: sticky;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    top: 0;
+    background-color: #ffffff;
+    color: #000000;
+    height: 10%;
+    width: 100%;
+    animation: fadeIn 3s ease-in-out;
 }
 
 .logo,
@@ -49,6 +49,7 @@ span {
   text-decoration: none;
   font-size: 16px;
   padding: 10px;
+  justify-content: space-between;
 }
 
 .logo {
@@ -120,7 +121,7 @@ span {
 
 
 
-.signup-popup {
+.btn-login-popup {
   padding: 10px 30px;
   background-color: #1262ed;
   color: #ffffff;
@@ -130,7 +131,7 @@ span {
   transition: 1s ease-in-out;
 }
 
-.signup-popup:hover {
+.btn-login-popup:hover {
   transform: translateY(-10px);
   transform: translateX(-2px);
   background-color: #0c0c0c;
@@ -142,7 +143,7 @@ span {
 .container {
   width: 100%;
   height: 50vh;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
   display: flex;
 }
 
@@ -150,7 +151,7 @@ span {
   width: 100%;
   animation: slideRight 2s ease-in-out;
   margin-left: 10%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 h4 {
@@ -221,7 +222,7 @@ h4 {
 .image {
   z-index: -10;
   position: relative;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 10%;
   display: flex;
   align-items: flex-end;
@@ -266,8 +267,8 @@ h4 {
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 60%; /* add this to limit the width to 50% of the parent container */
-  max-height: 50vh; /* add this to limit the height to 50% of the viewport height */
+  max-width: 100%; /* add this to limit the width to 50% of the parent container */
+  max-height: 100vh; /* add this to limit the height to 50% of the viewport height */
 }
 
 .bg {
@@ -347,10 +348,14 @@ section.feedback {
   box-sizing: border-box;
 }
 
+.tlsn-promo{
+  text-align: center;
+}
+
 .title-promo {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: start;
 }
 
 .title-promo h1 {
