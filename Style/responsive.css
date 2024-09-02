@@ -15,6 +15,7 @@
     }
     
     .logo,
+    
     span {
       color: dodgerblue;
       font-weight: bold;
@@ -75,7 +76,5 @@
       color: #1e90ff;
       font-size: 1.1rem;
     }
-    
-    /* Efek garis bawah saat hover */
     
 }
