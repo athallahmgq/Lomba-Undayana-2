@@ -10,8 +10,9 @@
 
 
  .wrapper{
-  position: absolute;
-  top: 13rem;
+  position: fixed;
+  z-index: 10;
+  top: 10rem;
   left: 35rem;
   width: 400px;
   height: 440px;
