@@ -119,8 +119,6 @@ span {
   left: 0;
 }
 
-
-
 .btn-login-popup {
   padding: 10px 30px;
   background-color: #1262ed;
@@ -139,6 +137,8 @@ span {
   color: white;
 }
 /* navagasi end */
+
+/* Hero start */
 
 .container {
   width: 100%;
@@ -177,17 +177,20 @@ h4 {
   font-weight: 250;
   line-height: 1.7;
 }
+
 .subtitle a {
   color: #030410;
   text-decoration: underline;
 }
+
 .button-area {
   display: flex;
   justify-self: start;
   width: 100%;
   left: 0;
 }
-.btn-download {
+
+.btn-gt {
   gap: 10px;
   border: #1262ed solid 2px;
   background-color: #1262ed;
@@ -199,12 +202,12 @@ h4 {
   transition: background-color 1s ease-in-out;
 }
 
-.btn-download:hover {
+.btn-gt:hover {
   background-color: white;
   color: #1262ed;
 }
 
-.btn-explore {
+.btn-exp {
   border: #1262ed solid 2px;
   color: #1262ed;
   padding: 10px 50px;
@@ -214,7 +217,7 @@ h4 {
   transition: 1s ease-in-out;
 }
 
-.btn-explore:hover {
+.btn-exp:hover {
   background-color: #1262ed;
   color: white;
 }
@@ -232,28 +235,6 @@ h4 {
   animation: slideLeft 2s ease-in-out;
 }
 
-/* .bagian-bwh{
-  animation: slideRight 2s ease-in;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  margin-left: -10.5%;
-  margin-top: 15%;
- 
-}
-
-
-.gambar-line {
-  animation: slideRight 2s ease-in;
-  width: 9%;
-  height: 5px;
-  background-color: #1262ed;
-  margin-top: 20%;
-  margin-left: -15.5%;
-  border-radius: 50px 50px 50px 50px;
-} */
-
 @media screen and (max-width: 768px) {
   .container {
     grid-template-columns: 50%;
@@ -267,21 +248,21 @@ h4 {
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 100%; /* add this to limit the width to 50% of the parent container */
-  max-height: 100vh; /* add this to limit the height to 50% of the viewport height */
+  max-width: 100%; 
+  max-height: 100vh; 
 }
 
 .bg {
   position: absolute;
   z-index: -10;
   width: 100%;
-  height: 100vh; /* Ubah menjadi 100vh untuk membuatnya pas dengan viewport */
+  height: 100vh;
 }
 
 .bg img {
   display: flex;
   width: 100%;
-  height: 70%; /* Pastikan lebar dan tinggi gambar sesuai dengan parent */
+  height: 70%; 
 }
 
 .img-bg {
@@ -290,7 +271,10 @@ h4 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* section fedback */
+/* Hero end */
+
+
+/*fedback start */
 
 section.feedback {
   height: 50%;
@@ -340,7 +324,10 @@ section.feedback {
   font-size: 1.3rem;
 }
 
-/* Promo Area */
+/* feedback end */
+
+
+/* Promo Start */
 
 .promo {
   width: 100vw;
@@ -412,7 +399,9 @@ section.feedback {
   transform: translateY(-20px);
 }
 
-/* popup */
+/* Promo End */
+
+/* popup start */
 
 .popup {
   width: 100%;
@@ -528,9 +517,12 @@ section.feedback {
   transform: translate(-50% -50%) scale(1);
 }
 
-/* Footer Section */
+/* popup end */
+
+/* Footer Start*/
+
 .footer {
-  /* background-color: #f5f5f5; */
+  background-color: transparent;
   height: 30vh;
   width: 100%;
 }
@@ -556,8 +548,6 @@ section.feedback {
   transition: 1s ease-in-out;
 }
 
-/* animation garis bawah */
-
 .footer-links a::after {
   content: "";
   position: absolute;
@@ -580,8 +570,6 @@ section.feedback {
   left: 0;
 }
 
-/* end */
-
 .footer-sosial {
   display: flex;
   gap: 15px;
@@ -599,6 +587,20 @@ section.feedback {
   margin-top: 40px;
   font-size: 0.9em;
 }
+
+/* Footer end */
+
+
+
+
+
+/* Other */
+
+
+
+
+
+
 .animate-fadein {
   animation: fadeIn 1s ease-in-out;
 }
