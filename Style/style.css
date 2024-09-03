@@ -823,6 +823,110 @@ footer {
 
 /* Footer end */
 
+/* ai Start */
+
+.ai{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 80%;
+  max-width: 1200px;
+  height: 80vh;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 20px; /* Border-radius ditambahkan */
+}
+
+/* Header chat dengan border-radius untuk bagian atas */
+.chat-header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 20px; /* Membulatkan sisi kiri atas */
+  border-top-right-radius: 20px; /* Membulatkan sisi kanan atas */
+}
+
+/* Kotak pesan yang fleksibel dengan background dan border-radius */
+.chat-box {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #e9f1fa;
+  overflow-y: auto;
+  border-radius: 20px; /* Border-radius di kotak pesan */
+}
+
+/* Input chat dengan border-radius untuk bagian bawah */
+.chat-input {
+  display: flex;
+  padding: 20px;
+  background-color: #ffffff;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 20px; /* Membulatkan sisi kiri bawah */
+  border-bottom-right-radius: 20px; /* Membulatkan sisi kanan bawah */
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.chat-input button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #0056b3;
+}
+
+/* Gaya pesan dengan border-radius */
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px; /* Membulatkan sudut pesan */
+  max-width: 70%;
+  font-size: 16px;
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+  border-radius: 15px 15px 0 15px; /* Kiri atas rounded */
+}
+
+.message.bot {
+  align-self: flex-start;
+  background-color: #f0f4f8;
+  color: #333;
+  border-radius: 15px 15px 15px 0; /* Kanan atas rounded */
+}
+/* ai  */
+
 
 
 
