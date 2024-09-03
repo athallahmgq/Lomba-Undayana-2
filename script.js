@@ -22,6 +22,10 @@ document.getElementById('send').addEventListener('click', function () {
       setTimeout(function() {
           addMessage('bot', 'Welcome To HealthBridge');
       }, 1000);  // Simulasi balasan bot
+
+      setTimeout(function() {
+        addMessage('bot', 'Mau Tanya Apa?');
+    }, 1000);  // Simulasi balasan bot
   }
 });
 

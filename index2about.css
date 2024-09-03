@@ -241,6 +241,138 @@ span {
   color: lightslategray;
 }
 
+footer {
+  background-color: white;
+  color: #333;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.footer-container p{
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 0.8rem;
+}
+
+.footer-left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-left .highlight {
+  color: #00BFFF; /* Warna biru muda */
+}
+
+.footer-middle, .footer-right {
+  flex: 1;
+  margin: 20px;
+}
+
+.footer-middle{
+  margin-left: 80px;
+}
+
+.footer-middle h3, .footer-right h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.footer-middle ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-middle ul li {
+  margin-bottom: 10px;
+}
+
+.footer-middle ul li a {
+  text-decoration: none;
+  color: #666;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+.footer-middle ul li a::after {
+  content: '\2192'; /* Unicode untuk panah kanan */
+  position: absolute;
+  left: -20px; /* Awal posisi panah di sebelah kanan teks */
+  opacity: 0;
+  transition: right 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-middle ul li a:hover {
+  color: #00BFFF;
+  transform: translateX(20px) scale(1.3); /* Geser ke kanan dan perbesar sedikit */
+}
+
+.footer-middle ul li a:hover::after {
+  right: -5px; /* Panah bergeser lebih dekat ke teks */
+  opacity: 1; /* Panah menjadi terlihat */
+}
+
+.footer-right form {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.footer-right input[type="email"] {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.footer-right button {
+  background-color: #00BFFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.footer-right button:hover {
+  background-color: #008FCC;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #666;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00BFFF;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  color: #666;
+}
+
 @keyframes popupFadeIn {
     from {
       opacity: 0;
