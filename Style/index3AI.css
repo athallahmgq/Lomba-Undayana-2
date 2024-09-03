@@ -149,7 +149,7 @@ span {
 
 }
 
-.backround-tulisan{
+.backround-tulisan-2{
   margin-left: 80px;
   width: 90%;
   height: 250px;
@@ -166,7 +166,7 @@ span {
 }
 
 
-.backround-tulisan h1{
+.backround-tulisan-2 h1{
 background: linear-gradient(to left, #33a3e5, #0e2f96);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
