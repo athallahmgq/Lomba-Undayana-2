@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kalnia+Glaze:wght@100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kalnia+Glaze:wght@100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+/* NAVIGASI BAR */
+
+header {
+  z-index: 10;
+    position: sticky;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    top: 0;
+    background-color: #ffffff;
+    color: #000000;
+    height: 10%;
+    width: 100%;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.logo,
+span {
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+.navbar {
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  transition: 1s ease-in-out;
+}
+
+.logo a:hover {
+  color: dodgerblue;
+  font-size: 23px;
+}
+
+.nav-link {
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.nav-link a {
+  position: relative;
+  color: inherit;
+  font-size: inherit;
+  transition: font-size 1s;
+  transition: 1s ease-in-out;
+}
+
+.nav-link a:hover {
+  color: #1e90ff;
+  font-size: 1.1rem;
+}
+
+/* Efek garis bawah saat hover */
+
+.nav-link a {
+  position: relative;
+  transition: font-size 1s;
+}
+
+.nav-link a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  width: 0;
+  height: 3px;
+  background: #1e90ff;
+  transition: width 1s, left 1s;
+}
+
+.nav-link a:hover{
+  font-size: 1.1em;
+  text-shadow: 0 0 1px #1e90ff, 0 0 1px #1e90ff, 0 0 1px #1e90ff;
+  transition: font-size 1s, text-shadow 1s;
+}
+
+.nav-link a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+
+
+.btn-login-popup {
+  padding: 10px 30px;
+  background-color: #1262ed;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+.btn-login-popup:hover {
+  transform: translateY(-10px);
+  transform: translateX(-2px);
+  background-color: #0c0c0c;
+  box-shadow: 4px 8px 20px 0px #0304106b;
+  color: white;
+}
+
+/* navigasi end  */
+
+.container-2{
+    width: 100%;
+    height: 90%;
+
+}
+
+.backround-tulisan{
+    margin-left: 80px;
+    width: 90%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 20px;
+    border: dodgerblue 3px solid;
+    box-shadow: 5px 10px 30px 0px #0304106b;
+    margin-top: 30px;
+    transition: 1s;
+    animation: fadeIn 3s ease-in-out;
+}
+
+
+.backround-tulisan h1{
+  background: linear-gradient(to left, #33a3e5, #0e2f96);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/* Isi */
+
+.bagian-tengah {
+    width: 100%;
+    height: 60%;
+    animation: slideRight 2s ease-in-out; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .title {
+    margin-top: 80px;
+    font-size: 4rem;
+    margin-bottom: 30px;
+    margin-left: 80px;
+  }
+  
+  .home-span {
+    background: linear-gradient(to left, #33a3e5, #0e2f96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+
+
+  .pengertian-card {
+    width: auto;
+    margin: 50px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    border: #D4E4FF 3px solid;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 4px 8px 36px #D4E4FF;
+    transition: 2s;
+  }
+  
+  .pengertian-card:hover {
+    box-shadow: 5px 10px 40px dodgerblue;
+    border: #1262ed 3px solid;
+    width: auto;
+    transform: translateY(-30px);
+    cursor: pointer;
+  }
+  
+.pengertian {
+  padding: 30px;
+}
+
+
+.pengertian p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.pengertian h5 {
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: lightslategray;
+}
+
+@keyframes popupFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* keyframe area */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(150px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes slideLeft {
+    from {
+      transform: translateX(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideRight {
+    from {
+      transform: translateX(-40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
