@@ -78,3 +78,367 @@
     }
     
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    height: auto; /* Adjust height to fit content */
+    margin-bottom: 5%; /* Adjust margin */
+    margin-top: 5rem;
+  }
+
+  .text {
+    margin-left: 0;
+    margin-top: 0;
+    width: 90%; /* Adjust text width for smaller screens */
+    text-align: center; /* Center text for better readability */
+  }
+
+  h4 {
+    font-size: 1.2rem; /* Adjust font size */
+    margin-left: 0; /* Center the text */
+  }
+
+  .title {
+    font-size: 2.5rem; /* Adjust title font size */
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .button-area {
+    justify-content: center; /* Center buttons */
+    margin-top: 20px;
+  }
+
+  .btn-gt, .btn-exp {
+    padding: 10px 30px; /* Adjust padding for buttons */
+    margin: 10px 5px; /* Add margin between buttons */
+  }
+
+  .image {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card-area {
+    flex-direction: column; /* Stack the cards vertically */
+    margin-top: 5%;
+    padding: 0 5%; /* Add padding for better spacing on small screens */
+  }
+
+  .card {
+    width: 90%; /* Reduce card width to fit smaller screens */
+    margin: 20px 0; /* Adjust margin for better spacing */
+    box-shadow: 3px 6px 20px rgba(0, 0, 0, 0.15); /* Reduce shadow intensity */
+  }
+
+  .card:hover {
+    width: 90%; /* Keep the card size consistent when hovered */
+    box-shadow: 3px 6px 30px dodgerblue;
+  }
+
+  .content h3 {
+    font-size: 22px; /* Reduce heading size */
+  }
+
+  .content p {
+    font-size: 14px; /* Reduce paragraph font size */
+  }
+
+  .btn-more:hover {
+    font-size: 14px; /* Slightly reduce button text size */
+  }
+
+  .card-image img {
+    height: auto; /* Ensure image maintains proportion on small screens */
+  }
+
+  .bg img {
+    height: auto; /* Adjust background image to scale properly */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section.about {
+    flex-direction: column; /* Stack the content vertically */
+    margin-top: 5%; /* Adjust margin */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .about-area {
+    flex-direction: column; /* Stack the image and content vertically */
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  .about-content {
+    width: 90%; /* Reduce the content width to fit smaller screens */
+    margin: 20px 0; /* Adjust margin for better spacing */
+    align-items: center; /* Center align content on smaller screens */
+    text-align: center; /* Center text for better readability */
+  }
+
+  .about-image {
+    display: none;
+  }
+
+  .title-about {
+    font-size: 1.8rem; /* Reduce the title font size */
+    margin-bottom: 15px;
+  }
+
+  .subtitle-about {
+    font-size: 1rem; /* Reduce subtitle font size */
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+
+  .btn-area2 {
+    width: 100%; 
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+  }
+
+  .btn-lm {
+    padding: 15px 30px; /* Reduce button padding */
+    font-size: 0.9rem; /* Adjust button text size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .promo-area {
+    flex-direction: column; /* Stack elements vertically */
+    margin: 2rem;
+    padding: 1rem;
+  }
+
+  .img-promo {
+    display: none;
+  }
+
+  .content-promo {
+    margin: 0;
+    padding: 1rem;
+    text-align: center; /* Center text in small screens */
+  }
+
+  .title-promo {
+    font-size: 2rem; /* Reduce font size */
+    text-align: center;
+  }
+
+  .deskripsi {
+    font-size: 1rem; /* Adjust description font size */
+    margin-bottom: 15px; /* Reduce margin */
+  }
+
+  .btn-area2 {
+    justify-content: center; /* Center button in small screens */
+    margin-top: 20px;
+  }
+
+  .btn-lm {
+    padding: 10px 30px; /* Adjust button padding for small screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .popup-content {
+    width: 90%; /* Make popup content fit smaller screens */
+    max-width: 100%; /* Allow it to stretch fully */
+    padding: 10px; /* Adjust padding for smaller screens */
+    top: 30%; /* Adjust top position */
+    left: 50%;
+    transform: translate(-50%, 0) scale(1); /* Center and scale correctly */
+  }
+
+  .popup-img img {
+    width: 100%; /* Make images full width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Reduce margin */
+    display: none;
+  }
+
+  .popup-header h1 {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .popup-header h2 {
+    font-size: 12px; /* Adjust font size */
+  }
+
+  .popup-text {
+    font-size: 12px; /* Adjust font size */
+  }
+
+  .popup-btn {
+    padding: 10px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .popup-close:link,
+  .popup-close:visited {
+    font-size: 24px; /* Adjust close button font size */
+    top: 5px; /* Adjust position */
+    right: 5px; /* Adjust position */
+  }
+}
+
+#popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+#popup:target .popup-content {
+  opacity: 1;
+  transform: translate(-50%, 0) scale(1); /* Center and scale correctly */
+}
+
+@media screen and (max-width: 480px) {
+  .h4-testi,
+  .h1-testi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .h1-testi h1 {
+    font-size: 24px; /* Reduce font size for smaller screens */
+  }
+
+  .testimoni-area {
+    flex-direction: column; /* Stack cards vertically */
+    margin-top: 2%;
+    padding: 0 10px; /* Add padding for small screens */
+  }
+
+  .testimoni-card {
+    width: 90%; /* Adjust width to fit smaller screens */
+    margin: 5px; /* Adjust margin for small screens */
+    padding: 10px; /* Reduce padding */
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.2); /* Adjust box-shadow for smaller screens */
+    transition: transform 0.3s, box-shadow 0.3s; /* Adjust transition duration */
+  }
+
+  .testimoni-card:hover {
+    box-shadow: 4px 8px 30px dodgerblue; /* Adjust box-shadow on hover */
+    width: 90%; /* Ensure card width is still responsive */
+    transform: translateY(-15px); /* Adjust translateY for hover effect */
+  }
+
+  .testimoni-card img {
+    width: 100%; /* Make image fill the width of the card */
+    margin: 0; /* Remove margin */
+  }
+
+  .testimoni {
+    padding: 5px; /* Reduce padding */
+  }
+
+  .testimoni h3 {
+    font-size: 20px; /* Adjust font size */
+    margin-bottom: 5px; /* Reduce margin */
+  }
+
+  .testimoni p {
+    font-size: 0.8rem; /* Adjust font size */
+    margin-bottom: 10px; /* Reduce margin */
+  }
+
+  .testimoni h5 {
+    font-size: 10px; /* Adjust font size */
+    margin-bottom: 5px; /* Reduce margin */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .feedback-area {
+    margin-top: 5rem;
+    background-image: url(img/bgfeed-small.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    height: auto; /* Allow height to adjust based on content */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 3px 6px 20px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box; /* Ensure padding and border are included in width and height */
+    overflow: hidden; /* Prevent content from overflowing */
+  }
+
+  .feedback-area:hover {
+    box-shadow: 3px 6px 30px dodgerblue;
+    transform: translateY(-5px); /* Adjust hover translation to avoid overflow */
+  }
+
+  .content-feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%; /* Ensure content fits within feedback area */
+  }
+
+  .feedback-area h3 {
+    font-size: 1.5rem; /* Adjust font size */
+    margin-bottom: 10px;
+    text-align: center; /* Center text */
+  }
+
+  .feedback-area h4 {
+    font-size: 0.9rem; /* Adjust font size */
+    text-align: center; /* Center text */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section.last {
+    height: auto; /* Allow height to adjust based on content */
+    margin-top: 2%;
+  }
+
+  .last-area {
+    margin-top: 5rem;
+    height: auto; /* Allow height to adjust based on content */
+    width: 95%; /* Increase width for better fit */
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Add padding for better spacing */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* Adjust shadow for smaller screens */
+  }
+
+  .content-last {
+    margin-left: 0; /* Remove margin for better fit */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+
+  .last-area h4 {
+    font-size: 1.8rem; /* Reduce font size */
+    text-align: center; /* Center align text */
+  }
+
+  .last-area h3 {
+    font-size: 1rem; /* Reduce font size */
+    text-align: center; /* Center align text */
+  }
+
+  .btn-area3 {
+    margin-right: 0; /* Remove margin for better fit */
+    justify-content: center; /* Center align buttons */
+    margin-top: 10px; /* Add top margin for spacing */
+  }
+
+  .btn-lt {
+    padding: 15px 30px; /* Adjust padding for smaller screens */
+    font-size: 0.9rem; /* Reduce font size */
+  }
+}
