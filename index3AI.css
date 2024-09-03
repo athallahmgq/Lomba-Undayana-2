@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kalnia+Glaze:wght@100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kalnia+Glaze:wght@100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+/* NAVIGASI BAR */
+
+header {
+  z-index: 10;
+    position: sticky;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    top: 0;
+    background-color: #ffffff;
+    color: #000000;
+    height: 10%;
+    width: 100%;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.logo,
+span {
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+.navbar {
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  transition: 1s ease-in-out;
+}
+
+.logo a:hover {
+  color: dodgerblue;
+  font-size: 23px;
+}
+
+.nav-link {
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.nav-link a {
+  position: relative;
+  color: inherit;
+  font-size: inherit;
+  transition: font-size 1s;
+  transition: 1s ease-in-out;
+}
+
+.nav-link a:hover {
+  color: #1e90ff;
+  font-size: 1.1rem;
+}
+
+/* Efek garis bawah saat hover */
+
+.nav-link a {
+  position: relative;
+  transition: font-size 1s;
+}
+
+.nav-link a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  width: 0;
+  height: 3px;
+  background: #1e90ff;
+  transition: width 1s, left 1s;
+}
+
+.nav-link a:hover{
+  font-size: 1.1em;
+  text-shadow: 0 0 1px #1e90ff, 0 0 1px #1e90ff, 0 0 1px #1e90ff;
+  transition: font-size 1s, text-shadow 1s;
+}
+
+.nav-link a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+
+
+.btn-login-popup {
+  padding: 10px 30px;
+  background-color: #1262ed;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+.btn-login-popup:hover {
+  transform: translateY(-10px);
+  transform: translateX(-2px);
+  background-color: #0c0c0c;
+  box-shadow: 4px 8px 20px 0px #0304106b;
+  color: white;
+}
+
+/* navigasi end  */
+
+
+.ai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 1200px;
+    height: 80vh;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; /* Border-radius ditambahkan */
+  }
+  
+  /* Header chat dengan border-radius untuk bagian atas */
+  .chat-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px; /* Membulatkan sisi kiri atas */
+    border-top-right-radius: 20px; /* Membulatkan sisi kanan atas */
+  }
+  
+  /* Kotak pesan yang fleksibel dengan background dan border-radius */
+  .chat-box {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #e9f1fa;
+    overflow-y: auto;
+    border-radius: 20px; /* Border-radius di kotak pesan */
+  }
+  
+  /* Input chat dengan border-radius untuk bagian bawah */
+  .chat-input {
+    display: flex;
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 20px; /* Membulatkan sisi kiri bawah */
+    border-bottom-right-radius: 20px; /* Membulatkan sisi kanan bawah */
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .chat-input button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .chat-input button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Gaya pesan dengan border-radius */
+  .messages {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px; /* Membulatkan sudut pesan */
+    max-width: 70%;
+    font-size: 16px;
+  }
+  
+  .message.user {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: white;
+    border-radius: 15px 15px 0 15px; /* Kiri atas rounded */
+  }
+  
+  .message.bot {
+    align-self: flex-start;
+    background-color: #f0f4f8;
+    color: #333;
+    border-radius: 15px 15px 15px 0; /* Kanan atas rounded */
+  }
+  /* ai  */
+  
+  
+  
+  
+  
+  /* Other */
+
+  footer {
+    background-color: white;
+    color: #333;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    margin-top: 3rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-container p{
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 0.8rem;
+  }
+  
+  .footer-left h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .footer-left .highlight {
+    color: #00BFFF; /* Warna biru muda */
+  }
+  
+  .footer-middle, .footer-right {
+    flex: 1;
+    margin: 20px;
+  }
+  
+  .footer-middle{
+    margin-left: 80px;
+  }
+  
+  .footer-middle h3, .footer-right h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .footer-middle ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-middle ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-middle ul li a {
+    text-decoration: none;
+    color: #666;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: relative;
+  }
+  
+  .footer-middle ul li a::after {
+    content: '\2192'; /* Unicode untuk panah kanan */
+    position: absolute;
+    left: -20px; /* Awal posisi panah di sebelah kanan teks */
+    opacity: 0;
+    transition: right 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .footer-middle ul li a:hover {
+    color: #00BFFF;
+    transform: translateX(20px) scale(1.3); /* Geser ke kanan dan perbesar sedikit */
+  }
+  
+  .footer-middle ul li a:hover::after {
+    right: -5px; /* Panah bergeser lebih dekat ke teks */
+    opacity: 1; /* Panah menjadi terlihat */
+  }
+  
+  .footer-right form {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .footer-right input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .footer-right button {
+    background-color: #00BFFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .footer-right button:hover {
+    background-color: #008FCC;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #666;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #00BFFF;
+    transform: scale(1.2);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    color: #666;
+  }
+  
+  
+  
+  
+  
+  
+  
