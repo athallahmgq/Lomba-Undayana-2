@@ -442,3 +442,41 @@
     font-size: 0.9rem; /* Reduce font size */
   }
 }
+
+@media (max-width: 480px) {
+  .chat-container {
+    width: 100%;
+    height: 90vh;
+    border-radius: 10px; /* Mengurangi border-radius di layar kecil */
+  }
+
+  .chat-header {
+    font-size: 20px; /* Ukuran font lebih kecil */
+    padding: 15px; /* Kurangi padding */
+  }
+
+  .chat-box {
+    padding: 10px; /* Kurangi padding */
+  }
+
+  .chat-input {
+    padding: 10px;
+    flex-direction: column; /* Mengubah layout input menjadi kolom */
+  }
+
+  .chat-input input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px; /* Tambahkan margin di bawah */
+  }
+
+  .chat-input button {
+    width: 100%; /* Sesuaikan tombol dengan lebar layar */
+  }
+
+  .message {
+    font-size: 14px; /* Ukuran font lebih kecil */
+    padding: 10px; /* Kurangi padding */
+    max-width: 90%; /* Kurangi lebar pesan */
+  }
+}
