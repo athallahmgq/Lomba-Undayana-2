@@ -27,6 +27,14 @@
     overflow-x: hidden;
 }
 
+/* .logos-slider img{
+    filter: grayscale(1);
+}
+
+.logos-slider img:hover{
+    filter: grayscale(0);
+} */
+
 .overflow-slider{
     display: flex;
     padding: .5rem 1rem;
