@@ -511,7 +511,7 @@ section.feedback {
 /* popup end */
 
 /* Footer Start*/
-
+/* 
 .footer {
   background-color: transparent;
   height: 30vh;
@@ -577,7 +577,113 @@ section.feedback {
   text-align: center;
   margin-top: 40px;
   font-size: 0.9em;
+} */
+
+/* Footer Styling */
+footer {
+  background-color: white;
+  color: #333;
+  padding: 20px 0;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin-top: 3rem;
 }
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo .highlight {
+  color: #00BFFF; /* Biru muda untuk huruf 'B' */
+}
+
+/* Menu Styling with Animation */
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-menu ul li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.footer-menu ul li a {
+  color: #333;
+  text-decoration: none;
+  padding-bottom: 5px;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.footer-menu ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #00BFFF;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.4s ease;
+}
+
+.footer-menu ul li a:hover::after {
+  width: 100%;
+}
+
+.footer-menu ul li a:hover {
+  color: #00BFFF;
+}
+
+/* Social Icons Styling with 3D Animation */
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00BFFF;
+  transform: scale(1.3) rotateX(15deg) rotateY(15deg);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .footer-menu ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-menu ul li {
+    margin: 10px 0;
+  }
+
+  .social-icons {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 
 /* Footer end */
 
