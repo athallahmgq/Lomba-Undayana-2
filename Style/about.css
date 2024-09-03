@@ -1,4 +1,4 @@
-/* section about */
+/* About start */
 
 section.about {
     margin-bottom: 5%;
@@ -18,22 +18,9 @@ section.about {
     display: flex;
     width: 100%;
     height: 100%;
-    
     justify-content: space-evenly;
-
   }
 
-  /* .bg-about{
-    display: flex;
-    position: absolute;
-    background-image: url(img/bg-about.png);
-    background-position: center;
-    background-size: cover;
-    top: 1;
-    width: 100vw;
-    height: 80vh;
-  } */
-  
   .about-image {
     margin-top: 1%;
     animation: slideRight1 5s linear;
@@ -51,22 +38,19 @@ section.about {
     margin-top: 35%;
     width: 100%;
     height: 100%;
-    max-width: 100%; /* add this to limit the width to 50% of the parent container */
-    max-height: 50vh; /* add this to limit the height to 50% of the viewport height */
+    max-width: 100%;
+    max-height: 50vh; 
   }
 
   .about-image:hover{
     animation: scale-up 1s infinite alternate;
   }
 
-  
-  
   .about-content {
     width: 100%;
     margin-top: 3%;
     margin-right: 0px;
     display: flex;
-    /* padding-left: 10%; */
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
@@ -117,7 +101,7 @@ section.about {
     box-shadow: 4px 8px 20px 0px #0304106b;
     color: white;
   }
-  
-  /* section testimonial */
+
+  /* About end */
 
   
