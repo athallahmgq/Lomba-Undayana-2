@@ -17,7 +17,7 @@ body {
 
 header {
   z-index: 10;
-    position: sticky;
+    position: fixed;
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -804,13 +804,15 @@ footer {
   margin-right: 10px;
   font-size: 18px;
   color: #666;
-  transition: color 0.3s, transform 0.3s;
+  transition: 3s;
 }
 
 .social-icons a:hover {
   color: #00BFFF;
-  transform: scale(1.2);
+  transform: scale(2.2);
+  transition: 3s;
 }
+
 
 .footer-bottom {
   text-align: center;
