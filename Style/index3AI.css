@@ -141,14 +141,48 @@ span {
 
 /* navigasi end  */
 
+/* Banner Tanya Dokter AI */
+
+.container-3{
+  width: 100%;
+  height: 90%;
+
+}
+
+.backround-tulisan{
+  margin-left: 80px;
+  width: 90%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 20px;
+  border: dodgerblue 3px solid;
+  box-shadow: 5px 10px 30px 0px #0304106b;
+  margin-top: 30px;
+  transition: 1s;
+  animation: fadeIn 3s ease-in-out;
+}
+
+
+.backround-tulisan h1{
+background: linear-gradient(to left, #33a3e5, #0e2f96);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: bold;
+font-size: 50px;
+}
+
 
 .ai{
-    display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .chat-container {
+    margin-left: 10%;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -158,10 +192,17 @@ span {
     height: 80vh;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 20px; /* Border-radius ditambahkan */
+    animation: fadeIn 3s ease-in-out;
+    transition: 1s;
+  }
+
+  .chat-container:hover{
+    box-shadow: 5px 10px 30px 0px #0304106b;
   }
   
   /* Header chat dengan border-radius untuk bagian atas */
   .chat-header {
+   
     background-color: #007bff;
     color: white;
     text-align: center;
@@ -381,7 +422,91 @@ span {
     padding-top: 20px;
     color: #666;
   }
+
+  .animate-fadein {
+    animation: fadeIn 1s ease-in-out;
+  }
+  .animate-slideup {
+    animation: slideUp 0.5s ease-out;
+  }
+  .animate-rotate {
+    animation: rotate 0.5s ease-in-out;
+  }
   
+  @keyframes popupFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* keyframe area */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(150px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes slideLeft {
+    from {
+      transform: translateX(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideRight {
+    from {
+      transform: translateX(-40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
   
   
   
