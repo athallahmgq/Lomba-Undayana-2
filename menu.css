@@ -1,0 +1,125 @@
+/* styles.css */
+
+.menu-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22rem;
+    animation: fadeIn 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.carousel-section {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    color: #333;
+}
+
+.carousel-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.carousel-section p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Carousel Item */
+.carousel-item {
+    margin-top: 1rem;
+    min-width: 20%; /* Untuk 5 item per slide pada desktop */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin: 0 10px; /* Margin antara item */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.carousel-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.carousel-item p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Buttons */
+.carousel-button {
+    margin-top: 1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: #ddd;
+}
+
+/* View All Button */
+.view-all-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5a67d8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.view-all-btn:hover {
+    background-color: #4c51bf;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-item {
+        min-width: 30%; /* Untuk 3 item per slide pada tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item {
+        min-width: 45%; /* Untuk 2 item per slide pada mobile */
+    }
+}

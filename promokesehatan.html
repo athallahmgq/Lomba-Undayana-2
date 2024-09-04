@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promo</title>
+    <link rel="stylesheet" href="promokesehatan.css" />
+    <link rel="stylesheet" href="Style/loginpopup.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Headear -->
+
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="#">Health<span>B</span>ridge</a></div>
+
+        <div class="nav-link">
+          <a href="index.html">Home</a>
+          <a href="index2about.html">Tentang Kami</a>
+          <a href="promokesehatan.html">Promo Kesehatan</a>
+          <a href="ai.html">Tanya Dokter AI</a>
+        </div>
+
+        <button class="btn-login-popup">Login</button>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <span class="icon-close">
+        <ion-icon name="close"></ion-icon>
+      </span>
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="Email" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" />Remember Me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn-login">Login</button>
+          <div class="login-register">
+            <p>
+              Don't have an account?<a href="#" class="register-link"
+                >Register</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="person"></ion-icon></span>
+            <input type="text" required />
+            <label>Username </label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="Email" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label
+              ><input type="checkbox" />I agree to the terms & conditions</label
+            >
+          </div>
+          <button type="submit" class="btn-login">Register</button>
+          <div class="login-register">
+            <p>
+              Already have an account?<a href="#" class="login-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="loginpopup.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Header End -->
+
+    <!-- promo banner -->
+
+    <div class="banner-area">
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="slide">
+            <img src="svg/banner1-1.svg" alt="Promo 1" />
+          </div>
+          <div class="slide">
+            <img src="svg/banner2-2.svg" alt="Promo 2" />
+          </div>
+          <div class="slide">
+            <img src="svg/banner3-3.svg" alt="Promo 3" />
+          </div>
+          <!-- Tambahkan lebih banyak slide jika diperlukan -->
+        </div>
+        <div class="carousel-nav">
+          <button class="prev-btn">&#10094;</button>
+          <button class="next-btn">&#10095;</button>
+        </div>
+        <div class="carousel-indicators">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <!-- Tambahkan lebih banyak dot sesuai jumlah slide -->
+        </div>
+      </div>
+    </div>
+
+    <script src="slider.js"></script>
+
+    <!-- promo banner end -->
+
+    <!-- promo card -->
+
+    <div class="area-promo">
+      <div class="promo-section">
+        <h2>Promo Lebaran dan Layanan Kesehatan</h2>
+        <div class="cards-container">
+          <!-- Card 1: Promo Lebaran -->
+          <div class="promo-card">
+            <img src="Style/img/lebaran.png" alt="Promo Lebaran" />
+            <h3>Promo Lebaran</h3>
+            <p>Layanan kesehatan khusus dengan diskon besar.</p>
+          </div>
+          <!-- Card 2: Layanan Gratis untuk Orang Miskin -->
+          <div class="promo-card">
+            <img src="Style/img/free.png" alt="Layanan Gratis" />
+            <h3>Layanan Gratis</h3>
+            <p>Layanan kesehatan gratis bagi yang membutuhkan.</p>
+          </div>
+          <!-- Card 3: Layanan VVIP -->
+          <div class="promo-card">
+            <img src="Style/img/vvip.png" alt="Layanan VVIP" />
+            <h3>Layanan VVIP</h3>
+            <p>Layanan premium dengan fasilitas terbaik.</p>
+          </div>
+          <!-- Card 4: Promo untuk Anak Kecil -->
+          <div class="promo-card">
+            <img src="Style/img/anak.png" alt="Promo Anak Kecil" />
+            <h3>Promo Anak Kecil</h3>
+            <p>Diskon khusus untuk layanan kesehatan anak-anak.</p>
+          </div>
+          <!-- Card 5: Promo untuk Orang Tua -->
+          <div class="promo-card">
+            <img src="Style/img/ortu.png" alt="Promo Orang Tua" />
+            <h3>Promo Orang Tua</h3>
+            <p>Diskon khusus untuk orang tua dan lansia.</p>
+          </div>
+          <!-- Card 6: Layanan Darurat Gratis -->
+          <div class="promo-card">
+            <img src="Style/img/darurat.png" alt="Layanan Darurat Gratis" />
+            <h3>Layanan Darurat Gratis</h3>
+            <p>Layanan darurat 24/7 tanpa biaya.</p>
+          </div>
+          <!-- Card 7: Promo untuk pengecekan kesehatan -->
+          <div class="promo-card">
+            <img
+              src="Style/img/health-screening.png"
+              alt="Promo pengecekan kesehatan"
+            />
+            <h3>health service check</h3>
+            <p>Diskon pengecekan kesehatan.</p>
+          </div>
+          <!-- Card 8: Layanan Hari Kesehatan Nasiona -->
+          <div class="promo-card">
+            <img src="Style/img/flag.png" alt="Hari Kesehatan Nasional" />
+            <h3>National Health Day</h3>
+            <p>Diskon khusus Hari Kesehatan Nasional.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h2>Health<span class="highlight">B</span>ridge</h2>
+          <p>3995 Valley, Oklahoma, United States</p>
+          <p>Call us: +40 (850) 455 52 93</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-middle">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-middle">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Services</a></li>
+            <li><a href="#">Documentations</a></li>
+            <li><a href="#">Site Map</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h3>Subscribe</h3>
+          <p>Subscribe to get the latest news from us</p>
+          <form>
+            <input type="email" placeholder="Email address" />
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 HealthBridge. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <!-- Footer End -->
+  </body>
+</html>

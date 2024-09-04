@@ -325,7 +325,7 @@ section.feedback {
 
 .title-promo h1 {
   font-size: inherit;
-  animation: slideUp 1s linear;
+  animation: slideUp 5s linear;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
 }
@@ -848,6 +848,7 @@ footer {
 /* Header chat dengan border-radius untuk bagian atas */
 .chat-header {
   background-color: #007bff;
+  position: relative;
   color: white;
   text-align: center;
   padding: 20px;
