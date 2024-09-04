@@ -138,9 +138,10 @@ header {
 /* Hero start */
 
 .container {
+  margin-top: 6rem;
   width: 100%;
   height: 50vh;
-  margin-bottom: 10%;
+  /* margin-bottom: 10%; */
   display: flex;
 }
 
