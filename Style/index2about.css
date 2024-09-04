@@ -17,7 +17,7 @@ body {
 
 header {
   z-index: 10;
-    position: sticky;
+    position: fixed;
     justify-content: space-between;
     display: flex;
     align-items: center;
