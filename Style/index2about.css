@@ -17,16 +17,16 @@ body {
 
 header {
   z-index: 10;
-    position: fixed;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    top: 0;
-    background-color: #ffffff;
-    color: #000000;
-    height: 10%;
-    width: 100%;
-    animation: fadeIn 3s ease-in-out;
+  position: fixed;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  top: 0;
+  background-color: #ffffff;
+  color: #000000;
+  height: 10%;
+  width: 100%;
+  animation: fadeIn 3s ease-in-out;
 }
 
 .logo,
@@ -108,7 +108,7 @@ span {
   transition: width 1s, left 1s;
 }
 
-.nav-link a:hover{
+.nav-link a:hover {
   font-size: 1.1em;
   text-shadow: 0 0 1px #1e90ff, 0 0 1px #1e90ff, 0 0 1px #1e90ff;
   transition: font-size 1s, text-shadow 1s;
@@ -118,8 +118,6 @@ span {
   width: 100%;
   left: 0;
 }
-
-
 
 .btn-login-popup {
   padding: 10px 30px;
@@ -141,30 +139,29 @@ span {
 
 /* navigasi end  */
 
-.container-2{
-    width: 100%;
-    height: 90%;
-
+.container-2 {
+  width: 100%;
+  height: 90%;
+  margin-top: 6rem;
 }
 
-.backround-tulisan{
-    margin-left: 80px;
-    width: 90%;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border-radius: 20px;
-    border: dodgerblue 3px solid;
-    box-shadow: 5px 10px 30px 0px #0304106b;
-    margin-top: 30px;
-    transition: 1s;
-    animation: fadeIn 3s ease-in-out;
+.backround-tulisan {
+  margin-left: 80px;
+  width: 90%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 20px;
+  border: dodgerblue 3px solid;
+  box-shadow: 5px 10px 30px 0px #0304106b;
+  margin-top: 30px;
+  transition: 1s;
+  animation: fadeIn 3s ease-in-out;
 }
 
-
-.backround-tulisan h1{
+.backround-tulisan h1 {
   background: linear-gradient(to left, #33a3e5, #0e2f96);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -175,58 +172,55 @@ span {
 /* Isi */
 
 .bagian-tengah {
-    width: 100%;
-    height: 60%;
-    animation: slideRight 2s ease-in-out; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  .title {
-    margin-top: 80px;
-    font-size: 4rem;
-    margin-bottom: 30px;
-    margin-left: 80px;
-  }
-  
-  .home-span {
-    background: linear-gradient(to left, #33a3e5, #0e2f96);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-  }
+  width: 100%;
+  height: 60%;
+  animation: slideRight 2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.title {
+  margin-top: 80px;
+  font-size: 4rem;
+  margin-bottom: 30px;
+  margin-left: 80px;
+}
 
-  .pengertian-card {
-    width: auto;
-    margin: 50px;
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    padding: 1px;
-    border: #D4E4FF 3px solid;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2);
-    overflow: hidden;
-    background-color: white;
-    box-shadow: 4px 8px 36px #D4E4FF;
-    transition: 2s;
-  }
-  
-  .pengertian-card:hover {
-    box-shadow: 5px 10px 40px dodgerblue;
-    border: #1262ed 3px solid;
-    width: auto;
-    transform: translateY(-30px);
-    cursor: pointer;
-  }
-  
+.home-span {
+  background: linear-gradient(to left, #33a3e5, #0e2f96);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.pengertian-card {
+  width: auto;
+  margin: 50px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  border: #d4e4ff 3px solid;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 4px 8px 36px #d4e4ff;
+  transition: 2s;
+}
+
+.pengertian-card:hover {
+  box-shadow: 5px 10px 40px dodgerblue;
+  border: #1262ed 3px solid;
+  width: auto;
+  transform: translateY(-30px);
+  cursor: pointer;
+}
+
 .pengertian {
   padding: 30px;
 }
-
 
 .pengertian p {
   font-size: 0.9rem;
@@ -259,7 +253,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.footer-container p{
+.footer-container p {
   margin-bottom: 10px;
   line-height: 1.5;
   font-size: 0.8rem;
@@ -272,19 +266,21 @@ footer {
 }
 
 .footer-left .highlight {
-  color: #00BFFF; /* Warna biru muda */
+  color: #00bfff; /* Warna biru muda */
 }
 
-.footer-middle, .footer-right {
+.footer-middle,
+.footer-right {
   flex: 1;
   margin: 20px;
 }
 
-.footer-middle{
+.footer-middle {
   margin-left: 80px;
 }
 
-.footer-middle h3, .footer-right h3 {
+.footer-middle h3,
+.footer-right h3 {
   font-size: 18px;
   margin-bottom: 15px;
   color: #333;
@@ -308,15 +304,15 @@ footer {
 }
 
 .footer-middle ul li a::after {
-  content: '\2192'; 
+  content: "\2192";
   position: absolute;
-  left: -20px; 
+  left: -20px;
   opacity: 0;
   transition: right 0.3s ease, opacity 0.3s ease;
 }
 
 .footer-middle ul li a:hover {
-  color: #00BFFF;
+  color: #00bfff;
   transform: translateX(20px) scale(1.3);
 }
 
@@ -339,7 +335,7 @@ footer {
 }
 
 .footer-right button {
-  background-color: #00BFFF;
+  background-color: #00bfff;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -350,7 +346,7 @@ footer {
 }
 
 .footer-right button:hover {
-  background-color: #008FCC;
+  background-color: #008fcc;
 }
 
 .social-icons a {
@@ -361,7 +357,7 @@ footer {
 }
 
 .social-icons a:hover {
-  color: #00BFFF;
+  color: #00bfff;
   transform: scale(1.2);
 }
 
@@ -374,76 +370,76 @@ footer {
 }
 
 @keyframes popupFadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  /* keyframe area */
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  @keyframes appear {
-    from {
-      opacity: 0;
-      scale: 0.5;
-    }
-    to {
-      opacity: 1;
-      scale: 1;
-    }
+}
+
+/* keyframe area */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  @keyframes slideUp {
-    from {
-      transform: translateY(150px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  to {
+    opacity: 1;
   }
-  
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
   }
-  
-  @keyframes slideLeft {
-    from {
-      transform: translateX(40px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  to {
+    opacity: 1;
+    scale: 1;
   }
-  
-  @keyframes slideRight {
-    from {
-      transform: translateX(-40px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(150px);
+    opacity: 0;
   }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
