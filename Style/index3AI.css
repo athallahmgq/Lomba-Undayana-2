@@ -197,7 +197,7 @@ font-size: 50px;
   }
 
   .chat-container:hover{
-    box-shadow: 5px 10px 30px 0px #0304106b;
+    box-shadow: 5px 10px 30px 0px black;
   }
   
   /* Header chat dengan border-radius untuk bagian atas */
