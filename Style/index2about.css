@@ -90,7 +90,6 @@ span {
   font-size: 1.1rem;
 }
 
-/* Efek garis bawah saat hover */
 
 .nav-link a {
   position: relative;
@@ -272,7 +271,7 @@ footer {
 }
 
 .footer-left .highlight {
-  color: #00BFFF; /* Warna biru muda */
+  color: #00BFFF; 
 }
 
 .footer-middle, .footer-right {
@@ -308,21 +307,21 @@ footer {
 }
 
 .footer-middle ul li a::after {
-  content: '\2192'; /* Unicode untuk panah kanan */
+  content: '\2192'; 
   position: absolute;
-  left: -20px; /* Awal posisi panah di sebelah kanan teks */
+  left: -20px;
   opacity: 0;
   transition: right 0.3s ease, opacity 0.3s ease;
 }
 
 .footer-middle ul li a:hover {
   color: #00BFFF;
-  transform: translateX(20px) scale(1.3); /* Geser ke kanan dan perbesar sedikit */
+  transform: translateX(20px) scale(1.3);
 }
 
 .footer-middle ul li a:hover::after {
-  right: -5px; /* Panah bergeser lebih dekat ke teks */
-  opacity: 1; /* Panah menjadi terlihat */
+  right: -5px; 
+  opacity: 1; 
 }
 
 .footer-right form {
