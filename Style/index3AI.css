@@ -17,7 +17,7 @@ body {
 
 header {
   z-index: 10;
-    position: sticky;
+    position: fixed;
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -146,6 +146,7 @@ span {
 .container-3{
   width: 100%;
   height: 90%;
+  margin-top: 6rem
 
 }
 
@@ -209,7 +210,7 @@ font-size: 50px;
     font-size: 24px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-top-left-radius: 20px; 
-    border-top-right-radius: 20px; 
+    border-top-right-radius: 20px;
   }
   
   
@@ -264,7 +265,7 @@ font-size: 50px;
     background-color: #ffffff;
     padding: 15px;
     margin-bottom: 15px;
-    border-radius: 15px; 
+    border-radius: 15px;
     max-width: 70%;
     font-size: 16px;
   }
@@ -321,7 +322,7 @@ font-size: 50px;
   }
   
   .footer-left .highlight {
-    color: #00BFFF; 
+    color: #00BFFF;
   }
   
   .footer-middle, .footer-right {
@@ -357,7 +358,7 @@ font-size: 50px;
   }
   
   .footer-middle ul li a::after {
-    content: '\2192'; 
+    content: '\2192';
     position: absolute;
     left: -20px;
     opacity: 0;
@@ -366,12 +367,12 @@ font-size: 50px;
   
   .footer-middle ul li a:hover {
     color: #00BFFF;
-    transform: translateX(20px) scale(1.3); 
+    transform: translateX(20px) scale(1.3);
   }
   
   .footer-middle ul li a:hover::after {
-    right: -5px; 
-    opacity: 1; 
+    right: -5px;
+    opacity: 1;
   }
   
   .footer-right form {
