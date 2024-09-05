@@ -141,6 +141,71 @@ span {
 
 /* navigasi end  */
 
+.bagian-tengah {
+  margin-top: 5%;
+  width: 98%;
+  height: 60%;
+  animation: slideRight 2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-span {
+  background: linear-gradient(to left, #33a3e5, #0e2f96);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.title {
+  margin-top: 80px;
+  font-size: 4rem;
+  margin-bottom: 30px;
+  margin-left: 80px;
+}
+
+.pengertian-card {
+  width: auto;
+  margin: 50px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  border: #d4e4ff 3px solid;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 4px 8px 36px #d4e4ff;
+  transition: 2s;
+}
+
+.pengertian-card:hover {
+  box-shadow: 5px 10px 40px dodgerblue;
+  border: #1262ed 3px solid;
+  width: auto;
+  transform: translateY(-30px);
+  cursor: pointer;
+}
+
+.pengertian {
+  padding: 30px;
+}
+
+.pengertian p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.pengertian h5 {
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: lightslategray;
+}
+
 /* Banner Tanya Dokter AI */
 
 .container-3{

@@ -203,7 +203,6 @@ font-size: 50px;
     gap: 20px;
 }
 
-/* Card Styling */
 .promo-card {
     background: linear-gradient(135deg, #ffffff, #eff1fc);
     padding: 20px;
@@ -272,14 +271,14 @@ font-size: 50px;
     color: #fff;
 }
 
-/* Gradient Border Animation */
+
 @keyframes rotate-border {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* Responsiveness */
+
 @media (max-width: 768px) {
     .promo-card {
         padding: 15px;
@@ -294,7 +293,7 @@ font-size: 50px;
     }
 }
 
-/* Footer */
+
 footer {
     background-color: white;
     color: #333;
