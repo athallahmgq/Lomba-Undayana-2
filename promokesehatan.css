@@ -135,6 +135,40 @@ header {
 }
 /* Navbar End */
 
+.container-4{
+  width: 100%;
+  height: 90%;
+
+}
+
+.backround-tulisan-4{
+  margin-left: 80px;
+  width: 90%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 20px;
+  border: dodgerblue 3px solid;
+  box-shadow: 5px 10px 30px 0px #0304106b;
+  margin-top: 30px;
+  transition: 1s;
+  animation: fadeIn 3s ease-in-out;
+}
+
+
+.backround-tulisan-4 h1{
+background: linear-gradient(to left, #33a3e5, #0e2f96);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: bold;
+font-size: 50px;
+}
+
+
+/* Promo */
+
 
 .area-promo{
     animation: fadeIn 3s ease-in-out;
@@ -146,7 +180,6 @@ header {
 }
 
 .promo-section {
-    background: #f4f7fc;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
@@ -154,6 +187,7 @@ header {
     width: 100%;
     text-align: center;
     color: #06000b;
+    animation: fadeIn 3s ease-in-out;
 }
 
 .promo-section h2 {
@@ -180,6 +214,7 @@ header {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     cursor: pointer;
     color: #06000b;
+    animation: fadeIn 3s ease-in-out;
 }
 
 .promo-card img {
@@ -205,7 +240,7 @@ header {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(45deg, #0d50c4, dodgerblue, #1ace74, #12edcc);
+    background: linear-gradient(45deg, #0d50c4, dodgerblue, white) ;
     background-size: 400%;
     animation: rotate-border 6s linear infinite;
     z-index: -1;
