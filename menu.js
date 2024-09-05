@@ -1,6 +1,6 @@
-// script.js
+
 let currentSlide = 0;
-const itemsPerSlide = 5; // Jumlah item per slide pada desktop
+const itemsPerSlide = 5; 
 const carousel = document.querySelector('.carousel');
 const carouselItems = document.querySelectorAll('.carousel-item');
 const totalSlides = Math.ceil(carouselItems.length / itemsPerSlide);

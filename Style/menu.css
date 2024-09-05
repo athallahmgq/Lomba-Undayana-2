@@ -1,4 +1,3 @@
-/* styles.css */
 
 .menu-area{
     width: 100%;
@@ -30,7 +29,7 @@
     color: #06000b;
 }
 
-/* Carousel Container */
+
 .carousel-container {
     position: relative;
     overflow: hidden;
@@ -39,14 +38,14 @@
     margin: 0 auto;
 }
 
-/* Carousel */
+
 .carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
     padding: 1rem;
 }
 
-/* Carousel Item */
+
 .carousel-item {
     margin-top: 1rem;
     min-width: 20%;
@@ -79,7 +78,7 @@
     color: #06000b;
 }
 
-/* Buttons */
+
 .carousel-button {
     margin-top: 1rem;
     position: absolute;
@@ -104,7 +103,7 @@
     background-color: #ddd;
 }
 
-/* View All Button */
+
 .view-all-btn {
     display: inline-block;
     margin-top: 5%;
@@ -122,7 +121,7 @@
     color: white;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .carousel-item {
         min-width: 30%; 
@@ -135,14 +134,14 @@
     }
 }
 
-/* Gradient Border Animation */
+
 @keyframes rotate-border {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* Responsiveness */
+
 @media (max-width: 768px) {
     .promo-card {
         padding: 15px;
