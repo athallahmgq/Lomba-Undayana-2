@@ -9,7 +9,7 @@ document.querySelectorAll('.social-icons a').forEach(icon => {
 });
 
 
-// ai 
+
 
 document.getElementById('send').addEventListener('click', function () {
   const input = document.getElementById('input');
@@ -21,13 +21,15 @@ document.getElementById('send').addEventListener('click', function () {
 
       setTimeout(function() {
           addMessage('bot', 'Welcome To HealthBridge');
-      }, 1000);  // Simulasi balasan bot
+      }, 1000);  
 
       setTimeout(function() {
         addMessage('bot', 'Mau Tanya Apa?');
-    }, 1000);  // Simulasi balasan bot
+    }, 1000);  
   }
 });
+
+
 
 function addMessage(sender, text) {
   const messagesContainer = document.getElementById('messages');

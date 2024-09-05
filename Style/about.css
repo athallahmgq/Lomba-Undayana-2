@@ -1,15 +1,10 @@
-/* About start */
+
 
 section.about {
     margin-bottom: 5%;
     display: flex;
     justify-content: space-between;
     margin-top: 10%;
-    /* background-image: url(img/bg-about.png);
-    background-position: center;
-    background-size: cover; */
-    /* display: grid;
-    grid-template-columns: 50% 50%; */
     width: 100vw;
     height: 80%;
   }
@@ -102,6 +97,6 @@ section.about {
     color: white;
   }
 
-  /* About end */
+  
 
   

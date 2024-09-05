@@ -107,17 +107,19 @@
 /* View All Button */
 .view-all-btn {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 5%;
     padding: 10px 20px;
-    background-color: #5a67d8;
-    color: #fff;
+    background-color: transparent;
+    color: dodgerblue;
     text-decoration: none;
     border-radius: 5px;
+    border: dodgerblue solid 2px;
     transition: background-color 0.3s ease-in-out;
 }
 
 .view-all-btn:hover {
-    background-color: #4c51bf;
+    background-color: dodgerblue;
+    color: white;
 }
 
 /* Responsive Design */

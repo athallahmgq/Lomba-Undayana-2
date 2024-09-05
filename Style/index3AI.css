@@ -90,7 +90,7 @@ span {
   font-size: 1.1rem;
 }
 
-/* Efek garis bawah saat hover */
+
 
 .nav-link a {
   position: relative;
@@ -200,7 +200,7 @@ font-size: 50px;
     box-shadow: 5px 10px 30px 0px black;
   }
   
-  /* Header chat dengan border-radius untuk bagian atas */
+  
   .chat-header {
     background-color: #007bff;
     color: white;
@@ -213,16 +213,16 @@ font-size: 50px;
     border-top-right-radius: 20px;
   }
   
-  /* Kotak pesan yang fleksibel dengan background dan border-radius */
+  
   .chat-box {
     flex-grow: 1;
     padding: 20px;
     background-color: #e9f1fa;
     overflow-y: auto;
-    border-radius: 20px; /* Border-radius di kotak pesan */
+    border-radius: 20px; 
   }
   
-  /* Input chat dengan border-radius untuk bagian bawah */
+  
   .chat-input {
     display: flex;
     padding: 20px;
@@ -255,7 +255,7 @@ font-size: 50px;
     background-color: #0056b3;
   }
   
-  /* Gaya pesan dengan border-radius */
+  
   .messages {
     display: flex;
     flex-direction: column;
