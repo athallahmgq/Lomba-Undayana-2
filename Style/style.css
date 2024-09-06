@@ -17,19 +17,21 @@ body {
 
 header {
   z-index: 10;
-    position: fixed;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    top: 0;
-    background-color: #ffffff;
-    color: #000000;
-    height: 10%;
-    width: 100%;
-    animation: fadeIn 3s ease-in-out;
+  position: fixed;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  top: 0;
+  background-color: #ffffff;
+  color: #000000;
+  height: 10%;
+  width: 100%;
+  animation: fadeIn 3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.logo,span {
+.logo,
+span {
   color: dodgerblue;
   font-weight: bold;
 }
@@ -38,7 +40,6 @@ header {
   padding: 1rem;
   display: flex;
   width: 100%;
-  height: 100%;
   justify-content: space-around;
   align-items: center;
 }
@@ -69,49 +70,51 @@ header {
   font-size: 23px;
 }
 
-.nav-link {
+.menu {
   display: flex;
   font-size: 1rem;
   align-items: center;
   margin-right: 20px;
 }
 
-.nav-link a {
+.menu a {
   position: relative;
+  text-decoration: none;
+  margin: 0 1rem;
   color: inherit;
   font-size: inherit;
   transition: font-size 1s;
   transition: 1s ease-in-out;
 }
 
-.nav-link a:hover {
+.menu a:hover {
   color: #1e90ff;
   font-size: 1.1rem;
 }
 
-.nav-link a {
+.menu a {
   position: relative;
   transition: font-size 1s;
 }
 
-.nav-link a::after {
+.menu a::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 6px;
+  bottom: -4px;
   width: 0;
   height: 3px;
   background: #1e90ff;
   transition: width 1s, left 1s;
 }
 
-.nav-link a:hover{
+.menu a:hover {
   font-size: 1.1em;
   text-shadow: 0 0 1px #1e90ff, 0 0 1px #1e90ff, 0 0 1px #1e90ff;
   transition: font-size 1s, text-shadow 1s;
 }
 
-.nav-link a:hover::after {
+.menu a:hover::after {
   width: 100%;
   left: 0;
 }
@@ -132,6 +135,72 @@ header {
   background-color: #0c0c0c;
   box-shadow: 4px 8px 20px 0px #0304106b;
   color: white;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger icon animation when clicked */
+.hamburger.open div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-around;
+  }
+
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease;
+  }
+
+  .navbar .menu.show {
+    display: flex;
+    max-height: 300px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar a {
+    padding: 10px 20px;
+  }
+
+  .navbar .btn-login-popup {
+    margin: 10px auto;
+  }
 }
 /* Navbar End */
 
@@ -245,12 +314,11 @@ h4 {
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 100%; 
-  max-height: 100vh; 
+  max-width: 100%;
+  max-height: 100vh;
 }
 
 /* Hero end */
-
 
 /*fedback start */
 
@@ -303,7 +371,6 @@ section.feedback {
 
 /* feedback end */
 
-
 /* Promo Start */
 
 .promo {
@@ -313,7 +380,7 @@ section.feedback {
   margin-top: 10%;
 }
 
-.tlsn-promo{
+.tlsn-promo {
   text-align: center;
 }
 
@@ -531,7 +598,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.footer-container p{
+.footer-container p {
   margin-bottom: 10px;
   line-height: 1.5;
   font-size: 0.8rem;
@@ -544,19 +611,21 @@ footer {
 }
 
 .footer-left .highlight {
-  color: #00BFFF; 
+  color: #00bfff;
 }
 
-.footer-middle, .footer-right {
+.footer-middle,
+.footer-right {
   flex: 1;
   margin: 20px;
 }
 
-.footer-middle{
+.footer-middle {
   margin-left: 80px;
 }
 
-.footer-middle h3, .footer-right h3 {
+.footer-middle h3,
+.footer-right h3 {
   font-size: 18px;
   margin-bottom: 15px;
   color: #333;
@@ -580,21 +649,21 @@ footer {
 }
 
 .footer-middle ul li a::after {
-  content: '\2192'; 
+  content: "\2192";
   position: absolute;
-  left: -20px; 
+  left: -20px;
   opacity: 0;
   transition: right 0.3s ease, opacity 0.3s ease;
 }
 
 .footer-middle ul li a:hover {
-  color: #00BFFF;
-  transform: translateX(20px) scale(1.3); 
+  color: #00bfff;
+  transform: translateX(20px) scale(1.3);
 }
 
 .footer-middle ul li a:hover::after {
-  right: -5px; 
-  opacity: 1; 
+  right: -5px;
+  opacity: 1;
 }
 
 .footer-right form {
@@ -611,7 +680,7 @@ footer {
 }
 
 .footer-right button {
-  background-color: #00BFFF;
+  background-color: #00bfff;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -622,7 +691,7 @@ footer {
 }
 
 .footer-right button:hover {
-  background-color: #008FCC;
+  background-color: #008fcc;
 }
 
 .social-icons a {
@@ -633,11 +702,10 @@ footer {
 }
 
 .social-icons a:hover {
-  color: #00BFFF;
+  color: #00bfff;
   transform: scale(2.2);
   transition: 3s;
 }
-
 
 .footer-bottom {
   text-align: center;
@@ -647,12 +715,11 @@ footer {
   color: #666;
 }
 
-
 /* Footer end */
 
 /* ai Start */
 
-.ai{
+.ai {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -667,9 +734,8 @@ footer {
   max-width: 1200px;
   height: 80vh;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 20px; 
+  border-radius: 20px;
 }
-
 
 .chat-header {
   background-color: #007bff;
@@ -723,7 +789,6 @@ footer {
   background-color: #0056b3;
 }
 
-
 .messages {
   display: flex;
   flex-direction: column;
@@ -742,27 +807,18 @@ footer {
   align-self: flex-end;
   background-color: #007bff;
   color: white;
-  border-radius: 15px 15px 0 15px; 
+  border-radius: 15px 15px 0 15px;
 }
 
 .message.bot {
   align-self: flex-start;
   background-color: #f0f4f8;
   color: #333;
-  border-radius: 15px 15px 15px 0; 
+  border-radius: 15px 15px 15px 0;
 }
 /* ai  */
 
-
-
-
-
 /* Other */
-
-
-
-
-
 
 .animate-fadein {
   animation: fadeIn 1s ease-in-out;
