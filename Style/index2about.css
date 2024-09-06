@@ -238,7 +238,7 @@ span {
 /* Isi */
 
 .bagian-tengah {
-  width: 100%;
+  width: 99%;
   height: 60%;
   animation: slideRight 2s ease-in-out;
   display: flex;
@@ -332,7 +332,7 @@ footer {
 }
 
 .footer-left .highlight {
-  color: #00bfff; /* Warna biru muda */
+  color: #00bfff; 
 }
 
 .footer-middle,

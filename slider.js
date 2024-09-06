@@ -37,5 +37,5 @@ dots.forEach((dot, i) => {
     });
 });
 
-// Menampilkan slide pertama saat halaman dimuat
+
 showSlide(slideIndex);
