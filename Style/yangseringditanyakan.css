@@ -9,6 +9,7 @@
 }
 
 .body-pertanyaan{
+    margin-top: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +117,7 @@
     position: relative;
     font-weight: 500;
     color: #333;
-    z-index: 10;
+    z-index: 9;
 }
 
 .container-5 .tab input:checked ~ label h3{

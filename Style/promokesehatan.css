@@ -236,6 +236,24 @@ font-weight: bold;
 font-size: 50px;
 }
 
+@media (max-width: 480px) {
+  /* Pada mobile, ukuran container-2 menjadi lebih kecil */
+  .container-4 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .backround-tulisan-4 {
+    width: 60%;
+    height: 40%;
+    margin-top: 20px;
+  }
+
+  .backround-tulisan-4 h1 {
+    font-size: 30px;
+  }
+}
+
 
 /* Promo */
 
